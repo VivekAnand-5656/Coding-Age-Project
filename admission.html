@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Age|Admission Vivek</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="admission.css">
+    <link rel="shortcut icon" href="./Pics/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav> 
+        <h1><img src="./Pics/logo.png" alt=""> Coding Age</h1>
+        <label for="menu-toggle" class="menu-toggle">☰</label>
+        <input type="checkbox" id="menu-toggle" style="display: none;" />
+        <ul class="nav-links">
+             <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" >Courses</a></li>
+            <li><a href="batches.html">Batches</a></li>
+            <li><a href="admission.html" class="active">Admission</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul> 
+    </nav> 
+    <main>
+        <!-- Text -->
+        <div class="text">
+            <h1>Admission Process</h1> 
+             <p>Secure your spot in one of our high-demand programs by following the simple steps below.</p>
+        </div>
+        <div class="list">
+                <ol>
+                    <li>📄 Fill out the admission form with accurate details.</li>
+                    <li>📚 Select your desired course and preferred batch timing.</li>
+                    <li>💳 Make the payment through our secure payment gateway.</li>
+                    <li>📩 Receive confirmation via email and SMS instantly.</li>
+                </ol>
+            </div>
+    </main>
+    <!-- Form -->
+    <form class="frm" action="/submit_data">
+        <h2>Apply Now</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" name="Name" id="Name" placeholder="Your full Name" required>
+        <label for="email">Email Address:</label>
+        <input type="email" name="Email" id="Email" placeholder="you@gmail.com" required>
+        <label for="Number">Mobile Number:</label>
+        <input type="number" name="Number" id="Number" placeholder="+91 74856 96365" required>
+        <label for="Select">Select Course:</label>
+        <select name="course" id="course" required>
+            <option value="select-course" selected>-- Choose a Course</option>
+            <option value="Web-development">Web Development</option>
+            <option value="Java">Java + Spring boot</option>
+            <option value="dsa">DSA in C/C++</option>
+            <option value="Flutter">Flutter App Development</option>
+            <option value="database">Database Management</option>
+        </select>
+        <label for="text">Preferred Batch:</label>
+        <input type="text" name="text" id="text" required placeholder="e.g.,Cage-K2, Evening">
+        <label for="Text">Additional Notes (optional):</label>
+        <textarea name="request" id="request" placeholder="Any specific requests or questions?" required></textarea>
+        <button type="submit">Submit Application</button>
+    </form>
+    <!-- Footer -->
+     <footer>
+        <div class="help">
+            <h2>Need Help?</h2>
+            <p>📞 Call us at <span>+91 98765 43210</span></p>
+            <p>📧 Email: <a href="">admissions@codingage.com</a></p>
+            <p>⏰ Office Hours: Mon–Sat, 10 AM – 6 PM</p>
+        </div>
+        <div class="reserve">
+            <p>© 2025 Coding Age. All rights reserved.</p>
+        </div>
+     </footer>
+</body>
+</html>

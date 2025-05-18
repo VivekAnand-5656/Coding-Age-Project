@@ -1,0 +1,154 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+     font-family: 'Inter', sans-serif;
+     background: #F4F8FC;
+ }
+ :root{
+    --colorhover:#FFCC00;
+    --background:#004080;
+    --special:#111827;
+    --text:#002B5C;
+}
+ .text{
+    width: 70vw;
+    height:10vh; 
+    margin:0vh auto; 
+    padding:100px;
+    text-align: center; 
+}
+.text h1{
+    color:var(--special);
+    font-size:3rem;
+    animation:anim ease-in-out 0.5s forwards;
+}
+.text p{  
+    font-size: 0.9em;
+    animation:anim ease-in-out 0.5s forwards;
+}
+/* List */
+.list{
+    width: 80vw;
+    margin: auto;
+    font-size: 0.9em;
+    line-height:2;
+}
+/* Form */
+.frm{
+    width: 80vw; 
+    background: #fff;
+    margin:10px auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column; 
+    row-gap: 10px;
+    border-radius: 10px;
+}
+.frm h2{
+    color: var(--background);
+}
+.frm input,select,textarea{
+    width: 100%;
+    height:50px;
+    border-radius:5px;
+    border:none;
+    box-shadow: 2px 2px 3px #8b8c8d,
+    -2px -2px 3px #8b8c8d;
+    padding:5px;
+}
+.frm input:focus{
+    background:var(--colorhover);
+    color:#000;
+}
+.frm textarea{
+    width: 100%;
+    height: 20vh;
+}
+.frm button{
+    width: 150px;
+    height: 8vh;
+    border-radius:5px;
+    border: none;
+    background: var(--background);
+    color: #fff;
+    font-weight: bold;
+    margin: auto;
+}
+/* Footer */
+.help{
+    width: 100%;
+    height: 30vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.help p{
+    font-size: 0.9em;
+}
+.help p span{
+    font-weight: bold;
+}
+.reserve{
+    width: 100%;
+    height: 15vh;
+    background: var(--background);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+/* Mobile Responsive */
+@media (max-width:768px) {
+    .text{
+        width: 100vw;
+        height:calc(30vh - 10vh);
+        margin-top: 10vh;
+        padding: 20px; 
+    }
+    .list{
+        width:80vw;
+        height:20vh;
+        font-size:1rem;
+    }
+    .frm{
+        width: 90vw;
+    }
+    .frm input,select{
+        height: 4vh;
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+    .frm textarea{
+        border: 1px solid #000;
+        box-shadow: none;
+        height: 10vh;
+    }
+    .frm button{
+        height: 5vh;
+    }
+    .help{
+        width: 100vw;
+        height: 20vh;
+    }
+    .help h2{
+        font-size: 2rem;
+    }
+    .help p{
+        font-size:1.1rem;
+    }
+    .reserve{
+        width: 100vw;
+        height: 10vh;
+        padding: 10px;    
+    }
+}
