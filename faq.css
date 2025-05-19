@@ -70,14 +70,14 @@ footer{
 @media (max-width:768px) {
     .text{
         width: 100vw;
-        height:calc(20vh - 10vh);
+        height:30vh;
         margin-top: 10vh;
         padding: 20px;  
         line-height: 1;
     }
     .box{
         width: 90vw;
-        height: 20vh;
+        height: 30vh;
     }
     footer{
         width: 100vw;

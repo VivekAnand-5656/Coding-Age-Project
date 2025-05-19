@@ -28,7 +28,7 @@
 
  .front {
      width:50%;
-     height: 50%;
+     height: 50vh;
      background: #f6f6f65e;
      display: flex;
      flex-direction: column;
@@ -139,7 +139,7 @@ font-size: 3rem;
     color: var(--background);
 }
 .say p{
-    font-style: italic;
+    font-style: italic; 
 }
 /* Upgrade */
 .upgrade{
@@ -152,7 +152,7 @@ font-size: 3rem;
     line-height: 2;
 }
 .upgrade h1{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 .upgrade button{
     width: 150px;
@@ -191,9 +191,11 @@ font-size: 3rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 10px;
     }
     .front{
         width: 80%;
+        height:;
         transform: none;
         text-align: center;
     }
@@ -213,22 +215,38 @@ font-size: 3rem;
     }
     .choose{
         width: 100vw;
-        height: 30vh;
+        height: 50vh;
         padding:50px;
+        
+    }
+    .choose p{
+        text-align:justify;
     }
     .ct{
         width: 100%;
     }
     .offer{
         width: 100vw;
+        height: 50vh;
         padding: 20px;
     }
     .say{
         width: 100vw;
-        height: 40vh;
+        height: 100vh;
+        line-height: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
     }
     .upgrade{
         width: 100vw; 
+        height: 30vh;
+        padding: 10px;
+    }
+    .upgrade h1{
+        font-size:1.5rem;
     }
     .link{
         width: 100vw;

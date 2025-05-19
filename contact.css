@@ -126,7 +126,7 @@
 }
 .visit iframe{
     width:100%;
-    height: 450px;
+    height:90%;
 }
 /* Footer */
 footer{
@@ -143,12 +143,12 @@ footer{
 @media (max-width:768px) {
     .text{
         width: 100vw;
-        height:calc(20vh - 10vh);
+        height:20vh;
         margin-top: 10vh;
         padding: 20px;  
     }
     .contact{
-        height: 20vh;
+        height: 40vh;
     }
     .form{ 
         flex-direction: column-reverse;
@@ -168,11 +168,11 @@ footer{
         font-size: 1rem;
     }
     .visit{
-        height: 50vh; 
-    }
+        height: 50vh;  
+    } 
     footer{
         width: 100vw;
-        height: 10vh;
+        height:10vh;
         padding: 10px;    
     }
 }

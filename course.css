@@ -163,7 +163,9 @@ footer{
         box-shadow: none;
     }
     .start{
+        width: 100vw;
         height: 40vh;
+        padding: 10px;
     }
     .start button{
         height: 5vh;

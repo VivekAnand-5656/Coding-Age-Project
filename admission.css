@@ -111,7 +111,7 @@
 @media (max-width:768px) {
     .text{
         width: 100vw;
-        height:calc(30vh - 10vh);
+        height:30vh;
         margin-top: 10vh;
         padding: 20px; 
     }
